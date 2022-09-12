@@ -27,7 +27,7 @@ body {
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
-     background: url(../images/body_bg.jpg);
+     background: url("../images/body_bg.jpg");
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -958,3 +958,29 @@ ul.email li i {
 .inner_page .contact {
      margin-top: 90px;
 }
+
+.container1 {
+     padding: 0 16px;
+   }
+   
+   .container1::after, .row::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+   
+   .title1 {
+     color: grey;
+   }
+
+   .card1 {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     margin: 20px;
+   }
+
+   .column1 {
+     float: left;
+     width: 33.3%;
+     margin-bottom: 16px;
+     padding: 0 8px;
+   }

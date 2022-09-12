@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>bitcypo</title>
+    <link rel="icon" href="{%static "images/PotterCoin.png"%}">
+    <title>PotterCoin</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -27,11 +28,11 @@
   
 </head>
 <body class="main-layout">
-        <!-- loader  -->
+        {% comment %} <!-- loader  -->
         <div class="loader_bg">
             <div class="loader"><img src="{%static  "images/loading.gif" %}" alt="" /></div>
         </div>
-        <!-- end loader -->
+        <!-- end loader --> {% endcomment %}
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a class="active" href="{% url 'Home' %}">Home</a>
@@ -50,16 +51,16 @@
                     <div class="row d_flex">
                         <div class="col-sm-3">
                             <div class="logo">
-                                <a href=" ">BitCYPO</a>
+                                <a href=" ">PotterCoin</a>
                             </div>
                         </div>
                         <div class="col-sm-5">
                             <ul class="social_icon text_align_right d_none">
-                                <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
-                                <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                <li> <a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li> <a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a></li>
+                                <li> <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                <li> <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li> <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4">
