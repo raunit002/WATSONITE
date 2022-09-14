@@ -68,12 +68,16 @@
                         <div class="col-sm-4">
                             <ul class="email text_align_right">
                                 {% comment %} we can make a user login option here! {% endcomment %}
-                                <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                                <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
-                                
+                                <li class="d_none"><a href="login"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                {% comment %} <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li> {% endcomment %}
+                               <li> <input type="text" name="name" class="search-txt" placeholder="search here" /><a class="search-btn" href=""><i class="fa fa-search" aria-hidden="true"></i>
+                                </a></li>
                             </ul>
                         </div>
                     </div>
+
+                     {% comment %} <span class="hello-msg">Hello, {{request.user}}</span>
+                     <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span> {% endcomment %}
                 </div>
             </div>
         </header>

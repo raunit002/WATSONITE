@@ -13,6 +13,10 @@ urlpatterns = [
     path('works', views.works,name='works'),
     path('testimonial',views.testimonial,name='testimonial'),
     path('crypto', views.crypto,name='crypto'),
+    path('register/', views.registerPage, name="register"),
+	path('login/', views.loginPage, name="login"),  
+	path('logout/', views.logoutUser, name="logout"),
+    
    
 
 ]
