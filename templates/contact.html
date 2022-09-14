@@ -78,6 +78,7 @@
     </header> {% endcomment %}
     <!-- end header -->
     <div class="contact">
+        {% include 'messages.html' %}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -90,19 +91,20 @@
                     </div>
                 </div>
                 <div class=" col-md-10 offset-md-1">
-                    <form id="request" class="main_form">
+                    <form  method="post" action="/contacts" id="request" class="main_form">
+                    {% csrf_token %} 
                         <div class="row">
                             <div class="col-md-6 ">
-                                <input class="contactus" placeholder="Full Name" type="type" name="Full Name">
+                                <input class="contactus" placeholder="Full Name" type="type" name="name">
                             </div>
                             <div class="col-md-6">
-                                <input class="contactus" placeholder="Email" type="type" name="Email">
+                                <input class="contactus" placeholder="Email" type="type" name="email">
                             </div>
                             <div class="col-md-6">
-                                <input class="contactus" placeholder="Phone number" type="type" name="Phone number">
+                                <input class="contactus" placeholder="Phone number" type="type" name="phone">
                             </div>
                             <div class="col-md-6">
-                                <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                                <textarea class="textarea" placeholder="Message" type="type" name="desc"></textarea>
                             </div>
                             <div class="col-md-12">
                                 <button class="send_btn">Send</button>

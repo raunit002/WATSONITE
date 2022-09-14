@@ -35,7 +35,7 @@
         <!-- end loader --> {% endcomment %}
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a class="active" href="{% url 'Home' %}">Home</a>
+            <a class="active" href="{% url 'home' %}">Home</a>
             <a href="{% url 'about' %}">About</a>
             <a href="{% url 'services' %}">Services</a>
             <a href="{% url 'testimonial' %}">Testimonial</a>
@@ -51,26 +51,26 @@
                     <div class="row d_flex">
                         <div class="col-sm-3">
                             <div class="logo">
-                                <a href=" ">PotterCoin</a>
+                                <ul>
+                                <li<button class="openbtn" onclick="openNav()"><img src="{%static "images/menu_btn.png" %}"></button>&emsp;   
+                                <a href=" ">PotterCoin</a></li>
                             </div>
                         </div>
                         <div class="col-sm-5">
-                            <ul class="social_icon text_align_right d_none">
+                            {% comment %} <ul class="social_icon text_align_right d_none">
                                 <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a></li>
                                 <li> <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
                                 <li> <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 <li> <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ul>
+                            </ul> {% endcomment %}
                         </div>
                         <div class="col-sm-4">
                             <ul class="email text_align_right">
                                 {% comment %} we can make a user login option here! {% endcomment %}
                                 <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                                <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
-                                <li>
-                                    <button class="openbtn" onclick="openNav()"><img src="{%static "images/menu_btn.png" %}"></button>
-                                </li>
+                                <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                                
                             </ul>
                         </div>
                     </div>

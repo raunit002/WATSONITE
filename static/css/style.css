@@ -254,7 +254,7 @@ header
 ---------------------------------------------------------------------*/
 
 header {
-     background: #0f132d;
+     background: #020202;
      width: 100%;
      padding: 22px 30px;
      height: 96px;
@@ -263,7 +263,7 @@ header {
 
 .logo a {
      color: #fff;
-     font-size: 25px;
+     font-size: 42px;
      font-weight: bold;
 }
 

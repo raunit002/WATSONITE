@@ -13,21 +13,28 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# from django.contrib import admin
+# from django.urls import path
+# from django.conf import settings
+# from django.conf.urls.static import static
+# from app import views
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('', views.Index,name='Home'),
+#     path('about/', views.about,name='about'),
+#     path('contact/', views.contact,name='contact'),
+#     path('services/', views.services,name='services'),
+#     path('works/', views.works,name='works'),
+#     path('testimonial/',views.testimonial,name='testimonial'),
+#     path('crypto/', views.crypto,name='crypto'),
+# ]
+
+
 from django.contrib import admin
-from django.urls import path
-from django.conf import settings
-from django.conf.urls.static import static
-from app import views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.Index,name='Home'),
-    path('about/', views.about,name='about'),
-    path('contact/', views.contact,name='contact'),
-    path('services/', views.services,name='services'),
-    path('works/', views.works,name='works'),
-    path('testimonial/',views.testimonial,name='testimonial'),
-    path('crypto/', views.crypto,name='crypto'),
-   
-
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('', include('app.urls'))
+]
