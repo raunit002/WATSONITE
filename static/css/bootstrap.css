@@ -251,7 +251,7 @@ optgroup,
 textarea {
   margin: 0;
   font-family: inherit;
-  font-size: inherit;
+  /* font-size: inherit; */
   line-height: inherit;
 }
 
@@ -1897,7 +1897,7 @@ select.form-control:focus::-ms-value {
   padding-top: calc(0.375rem + 1px);
   padding-bottom: calc(0.375rem + 1px);
   margin-bottom: 0;
-  font-size: inherit;
+  /* font-size: inherit; */
   line-height: 1.5;
 }
 

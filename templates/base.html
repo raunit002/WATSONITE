@@ -57,6 +57,8 @@
                             </div>
                         </div>
                         <div class="col-sm-5">
+                            <span class="hello-msg">Hello, {{request.user}}</span>
+                            <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span> 
                             {% comment %} <ul class="social_icon text_align_right d_none">
                                 <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a></li>
                                 <li> <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
@@ -69,15 +71,14 @@
                             <ul class="email text_align_right">
                                 {% comment %} we can make a user login option here! {% endcomment %}
                                 <li class="d_none"><a href="login"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                                {% comment %} <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li> {% endcomment %}
-                               <li> <input type="text" name="name" class="search-txt" placeholder="search here" /><a class="search-btn" href=""><i class="fa fa-search" aria-hidden="true"></i>
-                                </a></li>
+                                <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                                {% comment %} <li><input type="text" name="name" class="search-txt" placeholder="search here" /><a class="search-btn" href=""><i class="fa fa-search" aria-hidden="true"></i></a></li> {% endcomment %}
                             </ul>
                         </div>
                     </div>
 
-                     {% comment %} <span class="hello-msg">Hello, {{request.user}}</span>
-                     <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span> {% endcomment %}
+                      {% comment %} <span class="hello-msg">Hello, {{request.user}}</span>
+                     <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>  {% endcomment %}
                 </div>
             </div>
         </header>
