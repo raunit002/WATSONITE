@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<span class="hello-msg"> Hello, <strong>{{request.user}}</strong></span>
+<span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+
+{% endblock content %} 
