@@ -267,9 +267,19 @@ header {
      font-weight: bold;
 }
 
+.horizontal {
+     list-style: none;
+}
+
+.space {
+     padding: 5pt;
+     display: inline;
+}
+
 ul.social_icon {
-     float: right;
-     padding-top: 6px;
+     /* float: right;
+     padding-top: 6px; */
+     text-align: left;
 }
 
 ul.social_icon li {
