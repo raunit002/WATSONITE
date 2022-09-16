@@ -84,6 +84,17 @@ h6 {
      font-size: 13px
 }
 
+h7 {
+     font-size: 16px;
+     color:black;
+}
+
+h8 {
+     font-size: 29px;
+     color:black;
+}
+
+
 *,
 *::after,
 *::before {
@@ -461,6 +472,71 @@ ul.email li a:hover {
      margin-right: 15px;
 }
 
+/** Starts Section **/
+.layout_padding{
+     padding: 113px 0px 0px 0px;
+}
+
+.container5 {
+     margin-right: 46px;
+     margin-left: 46px;
+     height: 110%;
+     background-image: url("../images/img/map.png");
+     background-color: #ffffff;
+     background-position: left top;
+     background-repeat: no-repeat;
+     /* background-attachment: fixed;  */
+     background-size: 100%;
+}
+
+p.large_2 {
+     font-weight: 400;
+     font-size: 20px;
+     color: #333;
+     line-height: 30px;
+}
+
+.col-md-12 {
+     -webkit-box-flex: 0;
+     -ms-flex: 0 0 100%;
+     flex: 0 0 100%;
+     max-width: 100%;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+.icons {
+     margin-top: 50px;
+}
+
+.theme_color {
+    color: #f26d22;
+    font-weight: 900;
+}
+
+.row {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     margin-right: -15px;
+     margin-left: -15px;
+ }
+
+.col-md-40 {
+     -webkit-box-flex: 0;
+     /* -ms-flex: 0 0 33.333333%; */
+     flex: 0 0 33.333333%;
+     max-width: 33.333333%;
+} 
+
+/**Ends  Starts Section **/
 
 /** wallet **/
 
