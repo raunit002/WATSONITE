@@ -1,3 +1,3 @@
-# Crypto-Project
+# A Project on Crypto-Currency Website
 
-This is a demo crypto website made using django, html, css and JS.
+This is crypto website made using django, html, css and JS.
